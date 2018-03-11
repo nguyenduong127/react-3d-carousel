@@ -29,7 +29,7 @@ var Carousel = React.createClass({
             return React.createElement(
                 'figure',
                 { key: i, style: Util.figureStyle(d) },
-                React.createElement('img', { src: d.image, alt: i, height: '100%', width: '100%' })
+                d.image
             );
         });
         return React.createElement(
