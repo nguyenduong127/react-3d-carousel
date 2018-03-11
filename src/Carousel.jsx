@@ -26,7 +26,7 @@ var Carousel = React.createClass({
             this.state.figures.length);
         var figures = this.state.figures.map(function (d, i) {
             return (<figure key={i} style={Util.figureStyle(d)}>
-                <img src={d.image} alt={i} height={"100%"} width={"100%"}></img>
+                {d.image}
             </figure>);
         });
         return (
